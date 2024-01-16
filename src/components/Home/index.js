@@ -41,13 +41,16 @@ const Home = () => {
             />
           </h1>
           <h2>Game Developer / Software Enginner / Explorer</h2>
-          <Link
-            to="/contact"
+          <a
+            href="/path/to/your/resume.pdf" // Replace with the actual path to PDF file
             className="flat-button"
             style={{ marginRight: '20px' }}
+            target="_blank"
+            rel="noopener noreferrer"
           >
             RESUME
-          </Link>
+          </a>
+
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
