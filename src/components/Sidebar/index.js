@@ -3,14 +3,10 @@ import { useState } from 'react'
 import LogoR from '../../assets/images/R-logos.jpeg'
 import LogoSubtitle from '../../assets/images/4.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLinkedin,
-  faGithub,
-  faYoutube,
-  faSkype,
-} from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import {
   faHome,
+  faBook,
   faUser,
   faEnvelope,
   faSuitcase,
@@ -50,6 +46,14 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
+        </NavLink>
+        <NavLink
+          activeclassname="active"
+          className="skills-link"
+          to="/skills"
+          onClick={() => setShowNav(false)}
+        >
+          <FontAwesomeIcon icon={faBook} color="#4d4d4e" />
         </NavLink>
         <NavLink
           activeclassname="active"
